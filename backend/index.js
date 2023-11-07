@@ -2,9 +2,9 @@ import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 dotenv.config();
-
 import userRouter from "../backend/routes/user.route.js"
 import authRouter from "../backend/routes/auth.route.js"
+import cookieParser from "cookie-parser";
 
 mongoose.connect(process.env.MONGO).then(()=>{
     console.log('Connected to DB');
@@ -14,6 +14,8 @@ mongoose.connect(process.env.MONGO).then(()=>{
 
 const app = express();
 app.use(express.json());
+
+app.use(cookieParser());
 
 
 app.use("/api/user",userRouter);
