@@ -190,11 +190,11 @@ const CreateListing = () => {
                         <p>Beds</p>
                     </div>
                     <div className='flex items-center gap-2'>
-                        <input type="number" id='bathrooms' max="10000" min="1" className='p-3 border border-gray-300 rounded-lg' required onChange={handleChange} value={formData.bathrooms} />
+                        <input type="number" id='bathrooms' max="1000000" min="1" className='p-3 border border-gray-300 rounded-lg' required onChange={handleChange} value={formData.bathrooms} />
                         <p>Baths</p>
                     </div>
                     <div className='flex items-center gap-2'>
-                        <input type="number" id='regularPrice' max="10000" min="50" className='p-3 border border-gray-300 rounded-lg' required onChange={handleChange} value={formData.regularPrice}/>
+                        <input type="number" id='regularPrice' max="1000000" min="50" className='p-3 border border-gray-300 rounded-lg' required onChange={handleChange} value={formData.regularPrice}/>
                         <div className='flex flex-col items-center'>
                             <p>Regular Price</p>
                             <span className='text-xs'>($ / Month)</span>
