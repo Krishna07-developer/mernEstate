@@ -7,13 +7,14 @@
   "scripts": {
     "start": "node backend/index.js",
     "dev": "nodemon backend/index.js",
-    "build" : "npm install && npm install --prefix fronted && npm run build --prefix fronted"
+    "build": "npm install && npm install --prefix fronted && npm run build --prefix fronted"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "concurrently": "^8.2.2",
     "cookie-parser": "^1.4.6",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
